@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Cabin&display=swap');
+
+html {
+  font-size: 62.5%;
+  font-family: 'Cabin', sans-serif;
+  background-image: url('./background.png');
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.93);
+  max-width: 80vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: 6.66rem;
+  font-family: 'Bungee', serif;
+  margin-bottom: -2rem;
+}
+h2 {
+  font-size: 3.8rem;
+  font-family: 'Bungee', serif;
+  color: rgba(167, 209, 192, 1);
+  margin-top: 5rem;
+}
+h3 {
+  font-size: 2.6rem;
+  margin-top: 5rem;
+}
+
+a {
+  color: rgba(0, 124, 197, 1);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(128, 212, 251, 1);
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 3em;
+}
+
+@media (min-width: 769px) {
+  body {
+    max-width: 33vw;
+  }
+}
+
+.profilepic__image {
+  width: 100%;
+}
