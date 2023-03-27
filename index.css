@@ -3,53 +3,114 @@
 html {
   font-size: 16px;
   font-family: 'Cabin', sans-serif;
-  background-image: url('./background.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  color: #000;
+  background-color: #93C98D;
 }
 
 body {
   font-size: 1.4rem;
-  background-color: rgba(255, 255, 255, 0.93);
-  max-width: 80%;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 1rem;
-  padding-bottom: 5rem;
+  max-width: 320px;
+  margin: 0 auto 64px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: 'Bungee', serif;
+  text-shadow: 4px 4px 0px #E3B1D3;
 }
 h2 {
   font-size: 2rem;
   font-family: 'Bungee', serif;
-  color: rgba(96, 164, 136, 1);
-  margin-top: 1.6rem;
+  margin: 0;
 }
 h3 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 0;
+}
+p, ul {
+  font-size: 1.125rem;
 }
 
 a {
-  color: rgba(0, 124, 197, 1);
-  text-decoration: none;
+  color: #0C2E55;
+  text-decoration: underline;
+  font-weight: bold;
 }
 a:hover {
-  color: rgba(0,90,143, 1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-footer {
-  margin-top: 3em;
+.intro-grid {
+  display: grid;
+  gap: 1rem;
+}
+.cv-section {
+  padding: 16px;
+  background-color: #E3B1D3;
 }
 
-@media (min-width: 769px) {
+
+.project {
+  padding: 16px;
+  padding-bottom: 0;
+  background-color: #EBD5E4;
+}
+.project:nth-of-type(2n) {
+  background-color: #BDDEBA;
+}
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+}
+.project_img-mobile {
+  display: block;
+  max-width: 288px;
+}
+.project_img-tablet {
+  display: none;
+}
+
+/* TABLET */
+@media (min-width: 744px) {
   body {
-    max-width: 50%;
+    max-width: 716px;
+  }
+
+  .project {
+    padding: 24px;
+    padding-right: 200px;
+    position: relative;
+    min-height: 300px;
+  }
+  .project_img-mobile {
+    display: none;
+  }
+  .project_img-tablet {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1280px) {
+  body {
+    max-width: 1280px;
+  }
+
+  .project:nth-of-type(2n) {
+    background-color: #EBD5E4;
+  }
+  .project:nth-of-type(2),
+  .project:nth-of-type(3),
+  .project:nth-of-type(6),
+  .project:nth-of-type(7) {
+    background-color: #BDDEBA;
+  }
+  .projects-grid, .intro-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

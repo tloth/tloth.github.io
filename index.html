@@ -9,99 +9,184 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <h1>Anna T</h1>
-    <section id="section-hello">
-      <h2>hello</h2>
-      <p>My name is Anna</p>
-      <p>
-        If I could be any animal, I would be a gull (fun fact! there is no such
-        thing as a 'sea'gull)
-      </p>
-      <p>I believe in clean and accessible design and code</p>
-      <p>I send postcards and longingly watch people swing dance</p>
-    </section>
-    <section id="section-projects">
-      <h2>Some projects I worked on</h2>
-      <article>
-        <h3>Tinkl (designer & engineer)</h3>
+    <h1>Hello, I'm Anna</h1>
+    <div class="intro-grid">
+      <section>
+        <h2>Intro</h2>
         <p>
-          A PWA to help you find a suitable toilet FAST when you're out and
-          about in london, Founders and Coders student project
+          I am a product designer in training, looking for a company or
+          organisation who care about their users as much as I do!
         </p>
         <p>
-          Sadly, the app was live only until the beginning of 2023, but you can
-          read and see more about the design and build process (including user
-          research findings and Figma prototypes!) following the link below
+          I previously worked as a front-end engineer with a strong focus on
+          accessibility and design systems.
         </p>
         <p>
-          <a
-            href="https://github.com/FAC-Sixteen/Tinkl"
-            target="_blank"
-            rel="noopener noreferrer"
-            >The Tinkl design & code</a
+          In my free time, you can find me sending postcards, longingly watching
+          people swing dance or trying and failing to find a bang bang
+          cauliflower recipe that actually works.
+        </p>
+      </section>
+      <section class="cv-section">
+        <h2>CV & contact</h2>
+        <p>
+          Peek
+          <a href="./anna_toth-fish_CV.pdf" download="anna-toth_cv"
+            >my CV with fish</a
+          >
+          or
+          <a href="./anna_toth-CV.pdf" download="anna-toth_cv"
+            >my boring CV :)</a
           >
         </p>
-      </article>
-      <article>
-        <h3>Landing pages (engineer)</h3>
         <p>
-          Public-facing Habito landing pages built with accessibility, usability
-          and fun in mind
+          Email me nice things at
+          <a href="mailto:toth.annar@gmail.com">toth.annar@gmail.com</a>
         </p>
-        <ul>
-          <li>
-            <a
-              href="https://www.habito.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Homepage</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.habito.com/about-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              >About us page</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.habito.com/home-buying"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Homebuying landing page</a
-            >
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h3>Cinema ticket ordering app (designer)</h3>
-        <p>A student project as part of the Google UX Design course</p>
-        <p>
-          <a
-            href="https://docs.google.com/presentation/d/11te3hv7FTRkbuVwqqThYLwZNEFO5DZJd/edit?usp=sharing&ouid=117960322517707727401&rtpof=true&sd=true"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Case study for the cinema ticket ordering app design</a
-          >
-        </p>
-      </article>
-    </section>
-    <section id="section-cv">
-      <h2>CV & contact</h2>
-      <p>
-        Peek
-        <a href="./anna_toth-fish_CV.pdf" download="anna-toth_cv"
-          >my CV with fish</a
-        >
-        or
-        <a href="./anna_toth-CV.pdf" download="anna-toth_cv">my boring CV :)</a>
-      </p>
-      <p>
-        Email me nice things at
-        <a href="mailto:toth.annar@gmail.com">toth.annar@gmail.com</a>
-      </p>
+      </section>
+    </div>
+    <section>
+      <h2 style="margin: 2.5rem 0">Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <div>
+            <h3>Cinema ticket ordering mobile app</h3>
+            <p>A student project as part of the Google UX Design course</p>
+            <p>
+              Offering an alternative to the seat map, which users found
+              difficult to use
+            </p>
+            <p>
+              <a
+                href="https://docs.google.com/presentation/d/11te3hv7FTRkbuVwqqThYLwZNEFO5DZJd/edit?usp=sharing&ouid=117960322517707727401&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Case study for the cinema ticket ordering app design</a
+              >
+            </p>
+          </div>
+          <img
+            src="./assets/mobile-cinema.png"
+            alt=""
+            class="project_img-mobile"
+          />
+          <div>
+            <img
+              src="./assets/tablet-cinema.png"
+              alt=""
+              class="project_img-tablet"
+            />
+          </div>
+        </article>
+        <article class="project">
+          <div>
+            <h3>Tinkl</h3>
+            <p>
+              A PWA to help you find a suitable toilet FAST when you're out and
+              about in london, Founders and Coders student project
+            </p>
+            <p>
+              Sadly, the app was live only until the beginning of 2023, but you
+              can read and see more about the design and build process
+              (including user research findings and Figma prototypes!) following
+              the link below
+            </p>
+            <p>
+              <a
+                href="https://github.com/FAC-Sixteen/Tinkl"
+                target="_blank"
+                rel="noopener noreferrer"
+                >The Tinkl design & code</a
+              >
+            </p>
+          </div>
+          <img
+            src="./assets/mobile-tinkl.png"
+            alt=""
+            class="project_img-mobile"
+          />
+
+          <img
+            src="./assets/tablet-tinkl.png"
+            alt=""
+            class="project_img-tablet"
+          />
+        </article>
+        <article class="project">
+          <div class="project-body">
+            <h3>WIP: Book club web app</h3>
+            <p>
+              Another student project as part of the Google UX Design
+              course—this time, with a real user problem to be solved!
+            </p>
+            <p>
+              My friend from my book club and I are planning to build this app
+              so that we can keep track of what we read together
+            </p>
+            <p>Case study coming soon!</p>
+          </div>
+          <img
+            src="./assets/mobile-bookclub.png"
+            alt=""
+            class="project_img-mobile"
+          />
+          <img
+            src="./assets/tablet-bookclub.png"
+            alt=""
+            class="project_img-tablet"
+          />
+        </article>
+        <article class="project">
+          <div>
+            <h3>Habito landing pages</h3>
+            <p>
+              Some landing pages I built for Habito when I was working as a
+              front-end engineer
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.habito.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Homepage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.habito.com/about-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >About us page</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.habito.com/home-buying"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Homebuying landing page</a
+                >
+              </li>
+            </ul>
+            <p>
+              I decided to include these here because I'm very proud of building
+              them and I learned a lot about fun but still accessible design and
+              design-engineering collaboration in the process
+            </p>
+          </div>
+          <img
+            src="./assets/mobile-habito.png"
+            alt=""
+            class="project_img-mobile"
+          />
+          <img
+            src="./assets/tablet-habito.png"
+            alt=""
+            class="project_img-tablet"
+          />
+        </article>
+      </div>
     </section>
   </body>
 </html>
