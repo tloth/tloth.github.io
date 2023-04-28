@@ -28,7 +28,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 0;
 }
 p, ul {
   font-size: 1.125rem;
@@ -76,6 +75,14 @@ a:hover {
   max-height: 294px;
   display: block;
   margin: 1rem auto 16px;
+}
+
+.bookclub_img {
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-gap: 1rem;
 }
 
 /* TABLET */
@@ -132,6 +139,10 @@ a:hover {
     background-color: #BDDEBA;
   }
   .projects-grid, .intro-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
