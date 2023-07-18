@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* > * {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1.4rem;
   max-width: 320px;
@@ -83,6 +87,16 @@ a:hover {
 .grid {
   display: grid;
   grid-gap: 1rem;
+}
+
+.case_study-section {
+  width: 100%;
+  background-color: #BDDEBA;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+.case_study-section > h2, .case_study-section > * > * > h2 {
+  margin-top: 0;
 }
 
 /* TABLET */
