@@ -99,6 +99,11 @@ a:hover {
   margin-top: 0;
 }
 
+.back_link {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
 /* TABLET */
 @media (min-width: 744px) {
   body {
