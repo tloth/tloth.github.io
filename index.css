@@ -4,14 +4,23 @@ html {
   font-size: 16px;
   font-family: 'Cabin', sans-serif;
   color: #000;
-  background-color: #93C98D;
+  background-color: #E8C8C5;
   scroll-behavior: smooth;
+  background-image: linear-gradient(45deg, #E3B8B5 25%, transparent 25%), linear-gradient(-45deg, #E3B8B5 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #E3B8B5 75%), linear-gradient(-45deg, transparent 75%, #E3B8B5 75%);
+  background-size: 100px 100px;
+  background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
 }
 .html-book_club {
   background-color: #f4ce04;
+  background-image: linear-gradient(45deg, #FCDB22 25%, transparent 25%), linear-gradient(-45deg, #FCDB22 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #FCDB22 75%), linear-gradient(-45deg, transparent 75%, #FCDB22 75%);
+  padding-top: 32px;
+
 }
 .html-tinkl {
   background-color: #a3dbd2;
+  background-image: linear-gradient(45deg, #B6E2DB 25%, transparent 25%), linear-gradient(-45deg, #B6E2DB 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #B6E2DB 75%), linear-gradient(-45deg, transparent 75%, #B6E2DB 75%);
+  padding-top: 32px;
+
 }
 
 * > * {
@@ -20,19 +29,25 @@ html {
 
 body {
   font-size: 1.4rem;
+  margin: 0;
+}
+section, .header {
   max-width: 320px;
-  margin: 0 auto 64px;
+  margin: 0 auto;
+}
+section {
+  padding: 32px 0;
 }
 
 h1 {
   font-size: 2.5rem;
   font-family: 'Bungee', serif;
-  text-shadow: 4px 4px 0px #F5F5F5;
+  text-shadow: 4px 4px 0px #DCACA7;
 }
 h2 {
   font-size: 2rem;
   font-family: 'Bungee', serif;
-  margin: 2.5rem 0;
+  margin: 0 0 2.5rem;
   scroll-margin-top: 2rem;
 }
 h3 {
@@ -41,6 +56,13 @@ h3 {
 }
 p, ul {
   font-size: 1.125rem;
+}
+
+.html-book_club > * > * > h1 {
+  text-shadow: 4px 4px 0px #f4ce04;
+}
+.html-tinkl > * > * > h1 {
+  text-shadow: 4px 4px 0px #a3dbd2;
 }
 
 a {
@@ -53,42 +75,56 @@ a:hover {
   border-bottom: unset;
 }
 
-.h1-homepage {
-  text-shadow: 4px 4px 0px #E9C4C3;
+.section_container {
+  padding: 32px 0;
+}
+.section-projects {
+  background-color: #F2CD60;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23FFFFFF' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.section-about_me {
+  background-color: #C1CC99;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ACBB77' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+.section-contact {
+  background-color: #F5A65B;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23F8C08B' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .intro-grid {
   display: grid;
   grid-column-gap: 1rem;
 }
-.intro_img {
+.intro_img-container {
+  background-color: rgba(250, 250, 250, 0.8);
   width: 100%;
+  padding: 24px 24px 0;
+  border-radius: 24px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+.intro_img-container > img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .project {
-  padding: 16px;
-  padding-bottom: 0;
-  background-color: #E5F2E3;
-}
-.project:nth-of-type(2n) {
-  background-color: #BDDEBA;
+  padding: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: rgba(250, 250, 250, 0.8);
 }
 .projects-grid {
   display: grid;
   gap: 1rem;
 }
-.project_img-mobile {
+.project_img-standalone {
+  max-width: 176px;
+  max-height: 200px;
   display: block;
-  max-width: 288px;
-}
-.project_img-tablet {
-  display: none;
-}
-.project_img-standalone{
-  max-width: 288px;
-  max-height: 294px;
-  display: block;
-  margin: 1rem auto 16px;
+  margin: 2rem auto 16px;
 }
 
 .bookclub_img {
@@ -101,9 +137,9 @@ a:hover {
 
 .case_study-section {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: rgba(250, 250, 250, 0.8);
   padding: 24px;
-  margin-bottom: 40px;
+  border-radius: 24px;
 }
 .case_study-section > h2, .case_study-section > * > * > h2 {
   margin-top: 0;
@@ -116,62 +152,19 @@ a:hover {
 
 /* TABLET */
 @media (min-width: 744px) {
-  body {
+  section, .header {
     max-width: 716px;
   }
 
   .project {
-    padding: 24px;
     padding-right: 200px;
     position: relative;
     min-height: 300px;
-  }
-  .project_img-mobile {
-    display: none;
-  }
-  .project_img-tablet {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 200px;
   }
   .project_img-standalone{
     display: block;
     position: absolute;
     bottom: 24px;
     right: 24px;
-    max-width: 176px;
-  }
-}
-
-/* DESKTOP */
-@media (min-width: 1280px) {
-  body {
-    max-width: 1280px;
-  }
-
-  .intro_img {
-    grid-column-start: 2;
-    grid-row: 1 / span 2;
-    align-self: end;
-    margin-bottom: 0;
-  }
-
-  .project:nth-of-type(2n) {
-    background-color: #E5F2E3;
-  }
-  .project:nth-of-type(2),
-  .project:nth-of-type(3),
-  .project:nth-of-type(6),
-  .project:nth-of-type(7) {
-    background-color: #BDDEBA;
-  }
-  .projects-grid, .intro-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

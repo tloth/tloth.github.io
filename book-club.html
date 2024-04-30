@@ -9,13 +9,17 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <h1>Book Club case study</h1>
-    <a href="https://tloth.github.io" class="back_link">Back to the homepage</a>
+    <div class="header">
+      <h1>Book Club case study</h1>
+      <a href="https://tloth.github.io" class="back_link"
+        >Back to the homepage</a
+      >
+    </div>
 
-    <section class="case_study-section">
-      <div class="grid">
+    <section class="">
+      <h2 class="case_study-h2">Table of Contents</h2>
+      <div class="grid case_study-section">
         <div>
-          <h2 class="case_study-h2">Table of Contents</h2>
           <ol>
             <li><a href="#project-overview-section">Project overview</a></li>
             <li><a href="#context-section">Context for the Book Club</a></li>
@@ -42,489 +46,504 @@
       </div>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="project-overview-section" class="case_study-h2">
         Project overview
       </h2>
+      <div class="case_study-section">
+        <h3>The product</h3>
+        <p>
+          Book Club web app for a book club to keep track of what books members
+          have read and when
+        </p>
+        <h3>Project duration</h3>
+        <p>March - April 2023 (design phase)</p>
 
-      <h3>The product</h3>
-      <p>
-        Book Club web app for a book club to keep track of what books members
-        have read and when
-      </p>
-      <h3>Project duration</h3>
-      <p>March - April 2023 (design phase)</p>
+        <h3>The problem</h3>
+        <p>
+          The Book Club does not have a single source of truth for which books
+          members have read, when, whose choice it was and where they held the
+          meeting
+        </p>
 
-      <h3>The problem</h3>
-      <p>
-        The Book Club does not have a single source of truth for which books
-        members have read, when, whose choice it was and where they held the
-        meeting
-      </p>
+        <h3>The goal</h3>
+        <p>
+          A web app to serve as an information hub for the Book Club with
+          accurate statistics
+        </p>
 
-      <h3>The goal</h3>
-      <p>
-        A web app to serve as an information hub for the Book Club with accurate
-        statistics
-      </p>
-
-      <h3>My role & responsibilities</h3>
-      <p>Lead designer</p>
-      <p>User research, wireframing, prototyping, and usability testing</p>
+        <h3>My role & responsibilities</h3>
+        <p>Lead designer</p>
+        <p>User research, wireframing, prototyping, and usability testing</p>
+      </div>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="context-section" class="case_study-h2">
         Context for the Book Club
       </h2>
-      <p>
-        The Book Club is a self-organised group of 3-6 people (currently 4).
-        Members take turns suggesting 3 books to read, from which the others
-        vote democratically for one. They agree on a time and date to meet, this
-        usually allows one or two months to read the book. All the organising
-        happens in a WhatsApp group chat.
-      </p>
+      <div class="case_study-section">
+        <p>
+          The Book Club is a self-organised group of 3-6 people (currently 4).
+          Members take turns suggesting 3 books to read, from which the others
+          vote democratically for one. They agree on a time and date to meet,
+          this usually allows one or two months to read the book. All the
+          organising happens in a WhatsApp group chat.
+        </p>
 
-      <img
-        src="./assets/bookclub/bookclub-preview.png"
-        alt="Preview of the app on a laptop and on mobile"
-        class="bookclub_img"
-      />
+        <img
+          src="./assets/bookclub/bookclub-preview.png"
+          alt="Preview of the app on a laptop and on mobile"
+          class="bookclub_img"
+        />
+      </div>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="understanding-the-user-section" class="case_study-h2">
         Understanding the user
       </h2>
-      <h3>User research summary</h3>
-      <p>
-        We conducted interviews with 3 members of the Book Club. We wanted to
-        understand why they are still in the Book Club after months/years as it
-        is a community-driven club with no financial or other tangible incentive
-        to read and discuss books other than a love for books and spending time
-        together.
-      </p>
-      <p>
-        An assumption we made was there being a need to save notes and quotes in
-        one place that readers can later go back to. The interviews, however,
-        showed only two readers confirming this.
-      </p>
-      <p>
-        All readers mentioned it being hard to look up a book they had read
-        before if they can't remember the title or author.
-      </p>
-      <p>
-        There was a wide range of platforms readers consume their books on:
-        physical copies, e-readers, audiobooks (via an app or sometimes even
-        Youtube).
-      </p>
+      <div class="case_study-section">
+        <h3>User research summary</h3>
+        <p>
+          We conducted interviews with 3 members of the Book Club. We wanted to
+          understand why they are still in the Book Club after months/years as
+          it is a community-driven club with no financial or other tangible
+          incentive to read and discuss books other than a love for books and
+          spending time together.
+        </p>
+        <p>
+          An assumption we made was there being a need to save notes and quotes
+          in one place that readers can later go back to. The interviews,
+          however, showed only two readers confirming this.
+        </p>
+        <p>
+          All readers mentioned it being hard to look up a book they had read
+          before if they can't remember the title or author.
+        </p>
+        <p>
+          There was a wide range of platforms readers consume their books on:
+          physical copies, e-readers, audiobooks (via an app or sometimes even
+          Youtube).
+        </p>
 
-      <h3>Pain points</h3>
-      <ul>
-        <li>saving notes and quotes in one place</li>
-        <li>looking up a book if they don't remember the title</li>
-        <li>not remembering whose turn it is to pick a book next</li>
-        <li>voting for a book</li>
-        <li>finding a time and date that works for everyone</li>
-      </ul>
+        <h3>Pain points</h3>
+        <ul>
+          <li>saving notes and quotes in one place</li>
+          <li>looking up a book if they don't remember the title</li>
+          <li>not remembering whose turn it is to pick a book next</li>
+          <li>voting for a book</li>
+          <li>finding a time and date that works for everyone</li>
+        </ul>
 
-      <h3>Problem statement</h3>
-      <p>
-        Minna is a Book Club member who needs a way to organise and keep track
-        of Book Club meetings and the books they read because she wants to keep
-        a record of all the books and meetings in one place.
-      </p>
+        <h3>Problem statement</h3>
+        <p>
+          Minna is a Book Club member who needs a way to organise and keep track
+          of Book Club meetings and the books they read because she wants to
+          keep a record of all the books and meetings in one place.
+        </p>
+      </div>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="starting-the-design-section" class="case_study-h2">
         Starting the design
       </h2>
+      <div class="case_study-section">
+        <h3>Competitive audit</h3>
+        <p>
+          We audited two book club apps, Bookclubs and Fable, and noticed that
+          both have a very simple colour scheme in order to let the book covers
+          stand out.
+        </p>
+        <h3>Abandoned features</h3>
+        <p>
+          We did Crazy Eights exercises to come up with ideas for two problems:
+          voting for a book from three options and finding a meeting time and
+          date that works for everybody.
+        </p>
+        <p>
+          Using the voting feature in the Book Club app would require members to
+          leave WhatsApp (where we currently handle all the organising), use the
+          app, then come back to WhatsApp. This is way more hassle than using
+          WhatsApp's new poll feature (or even just typing out the three
+          options), so we decided to leave the voting feature out.
+        </p>
+        <p>
+          Finding a meeting time and date has been quite difficult in the group
+          chat, however, moving this to the app would make the process easier
+          only if everyone had an always up-to-date digital calendar that they
+          wouldn't mind sharing, which not everybody does. Hence this feature
+          was scrapped, too.
+        </p>
 
-      <h3>Competitive audit</h3>
-      <p>
-        We audited two book club apps, Bookclubs and Fable, and noticed that
-        both have a very simple colour scheme in order to let the book covers
-        stand out.
-      </p>
-      <h3>Abandoned features</h3>
-      <p>
-        We did Crazy Eights exercises to come up with ideas for two problems:
-        voting for a book from three options and finding a meeting time and date
-        that works for everybody.
-      </p>
-      <p>
-        Using the voting feature in the Book Club app would require members to
-        leave WhatsApp (where we currently handle all the organising), use the
-        app, then come back to WhatsApp. This is way more hassle than using
-        WhatsApp's new poll feature (or even just typing out the three options),
-        so we decided to leave the voting feature out.
-      </p>
-      <p>
-        Finding a meeting time and date has been quite difficult in the group
-        chat, however, moving this to the app would make the process easier only
-        if everyone had an always up-to-date digital calendar that they wouldn't
-        mind sharing, which not everybody does. Hence this feature was scrapped,
-        too.
-      </p>
+        <h3>Sitemap</h3>
+        <img
+          src="./assets/bookclub/bookclub-sitemap1.png"
+          alt="Initial sitemap"
+          class="bookclub_img"
+        />
+        <p>
+          The first usability testing session showed that the initial
+          low-fidelity digital wireframes based on this sitemap were highly
+          confusing. What was the difference between a book and a meeting?
+          Aren't they interconnected? So we started from scratch and created a
+          new sitemap based on user stories.
+        </p>
 
-      <h3>Sitemap</h3>
-      <img
-        src="./assets/bookclub/bookclub-sitemap1.png"
-        alt="Initial sitemap"
-        class="bookclub_img"
-      />
-      <p>
-        The first usability testing session showed that the initial low-fidelity
-        digital wireframes based on this sitemap were highly confusing. What was
-        the difference between a book and a meeting? Aren't they interconnected?
-        So we started from scratch and created a new sitemap based on user
-        stories.
-      </p>
+        <h3>User stories</h3>
+        <ul>
+          <li>
+            I want to <strong>add a new book</strong> when the group decides
+            what to read next
+          </li>
+          <li>
+            I want to <strong>create a new meeting</strong> when the group
+            decides where and when to meet to discuss the book
+          </li>
+          <li>
+            I want to immediately
+            <strong
+              >see what the club is currently reading and the details of the
+              next meeting</strong
+            >
+          </li>
+          <li>
+            I want to <strong>take notes and save quotes</strong> from the book
+            I'm currently reading
+          </li>
+          <li>
+            I want to <strong>see all the books</strong> the club has read
+          </li>
+          <li>
+            I want to <strong>filter and search the books</strong> the club has
+            read
+          </li>
+          <li>
+            For each book, I want to see the details, my notes and rating, and
+            meeting details in one place (members present, ratings, where and
+            when)
+          </li>
+          <li>I want to see all the current and past members of the club</li>
+        </ul>
 
-      <h3>User stories</h3>
-      <ul>
-        <li>
-          I want to <strong>add a new book</strong> when the group decides what
-          to read next
-        </li>
-        <li>
-          I want to <strong>create a new meeting</strong> when the group decides
-          where and when to meet to discuss the book
-        </li>
-        <li>
-          I want to immediately
-          <strong
-            >see what the club is currently reading and the details of the next
-            meeting</strong
+        <h3>Sitemap v2</h3>
+        <img
+          src="./assets/bookclub/bookclub-sitemap2.png"
+          alt="Updated sitemap"
+          class="bookclub_img"
+        />
+        <p>
+          We merged books and meetings to be one entity and removed the
+          "Members" page as it did not serve a purpose with the revised user
+          stories.
+        </p>
+
+        <h3>Paper wireframes</h3>
+        <div class="grid">
+          <img
+            src="./assets/bookclub/bookclub-paper_wireframes1.jpeg"
+            alt="Paper wireframes part 1"
+            class="bookclub_img"
+          />
+          <img
+            src="./assets/bookclub/bookclub-paper_wireframes2.jpeg"
+            alt="Paper wireframes part 2"
+            class="bookclub_img"
+          />
+        </div>
+
+        <h3>Low-fidelity digital wireframes</h3>
+        <div class="grid">
+          <img
+            src="./assets/bookclub/bookclub-lofi-wireframe-1.jpg"
+            alt="Low fidelity digital wireframe 1"
+            class="bookclub_img"
+          />
+          <img
+            src="./assets/bookclub/bookclub-lofi-wireframe-2.jpg"
+            alt="Low fidelity digital wireframe 2"
+            class="bookclub_img"
+          />
+        </div>
+        <p>
+          See more
+          <a
+            href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=20%3A457&t=kOQga3oQ3dWXYnFP-1"
+            target="_blank"
+            >low-fidelity wireframes</a
           >
-        </li>
-        <li>
-          I want to <strong>take notes and save quotes</strong> from the book
-          I'm currently reading
-        </li>
-        <li>I want to <strong>see all the books</strong> the club has read</li>
-        <li>
-          I want to <strong>filter and search the books</strong> the club has
-          read
-        </li>
-        <li>
-          For each book, I want to see the details, my notes and rating, and
-          meeting details in one place (members present, ratings, where and
-          when)
-        </li>
-        <li>I want to see all the current and past members of the club</li>
-      </ul>
-
-      <h3>Sitemap v2</h3>
-      <img
-        src="./assets/bookclub/bookclub-sitemap2.png"
-        alt="Updated sitemap"
-        class="bookclub_img"
-      />
-      <p>
-        We merged books and meetings to be one entity and removed the "Members"
-        page as it did not serve a purpose with the revised user stories.
-      </p>
-
-      <h3>Paper wireframes</h3>
-      <div class="grid">
-        <img
-          src="./assets/bookclub/bookclub-paper_wireframes1.jpeg"
-          alt="Paper wireframes part 1"
-          class="bookclub_img"
-        />
-        <img
-          src="./assets/bookclub/bookclub-paper_wireframes2.jpeg"
-          alt="Paper wireframes part 2"
-          class="bookclub_img"
-        />
+          on Figma.
+        </p>
       </div>
-
-      <h3>Low-fidelity digital wireframes</h3>
-      <div class="grid">
-        <img
-          src="./assets/bookclub/bookclub-lofi-wireframe-1.jpg"
-          alt="Low fidelity digital wireframe 1"
-          class="bookclub_img"
-        />
-        <img
-          src="./assets/bookclub/bookclub-lofi-wireframe-2.jpg"
-          alt="Low fidelity digital wireframe 2"
-          class="bookclub_img"
-        />
-      </div>
-      <p>
-        See more
-        <a
-          href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=20%3A457&t=kOQga3oQ3dWXYnFP-1"
-          target="_blank"
-          >low-fidelity wireframes</a
-        >
-        on Figma.
-      </p>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="usability-testing-section" class="case_study-h2">
         Usability testing
       </h2>
-      <p>
-        We used this
-        <a
-          href="https://www.figma.com/proto/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=22-777&scaling=scale-down&page-id=20%3A457&starting-point-node-id=22%3A777&show-proto-sidebar=1"
-          target="_blank"
-          >low-fidelity prototype</a
-        >
-        on Figma to test the app with real users.
-      </p>
+      <div class="case_study-section">
+        <p>
+          We used this
+          <a
+            href="https://www.figma.com/proto/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=22-777&scaling=scale-down&page-id=20%3A457&starting-point-node-id=22%3A777&show-proto-sidebar=1"
+            target="_blank"
+            >low-fidelity prototype</a
+          >
+          on Figma to test the app with real users.
+        </p>
 
-      <h3>Study details</h3>
-      <p>Study type: moderated usability study</p>
-      <p>Location: online remote in the UK</p>
-      <p>Participants: 4 participants (all book club members or book lovers)</p>
+        <h3>Study details</h3>
+        <p>Study type: moderated usability study</p>
+        <p>Location: online remote in the UK</p>
+        <p>
+          Participants: 4 participants (all book club members or book lovers)
+        </p>
 
-      <h3>Findings & themes</h3>
-      <p>
-        After compiling the findings with the help of an affinity diagram, we
-        discovered the following themes:
-      </p>
-      <ul>
-        <li>
-          <p>How users search for books</p>
-          <ul>
-            <li>scroll and skim to find book</li>
-            <li>search for tags —> books need tags</li>
-            <li>search by date —> need visible timeline/dates</li>
-          </ul>
-        </li>
-        <li>
-          <p>Confusion over</p>
-          <ul>
-            <li>
-              “Books”: we need to make the scope of the app clear: Book Club
-              only, not all the books in the world like Goodreads
-            </li>
-            <li>
-              “Profile”: profile page should only contain account information;
-              have a separate “My shelves” page for a personalised books page
-            </li>
-          </ul>
-        </li>
-        <li><p>Edit icon was not intuitive</p></li>
-        <li>
-          <p>Suggestions from users</p>
-          <ul>
-            <li>want to see ratings (individual, average)</li>
-            <li>see other people's notes & quotes after the meeting</li>
-          </ul>
-        </li>
-      </ul>
+        <h3>Findings & themes</h3>
+        <p>
+          After compiling the findings with the help of an affinity diagram, we
+          discovered the following themes:
+        </p>
+        <ul>
+          <li>
+            <p>How users search for books</p>
+            <ul>
+              <li>scroll and skim to find book</li>
+              <li>search for tags —> books need tags</li>
+              <li>search by date —> need visible timeline/dates</li>
+            </ul>
+          </li>
+          <li>
+            <p>Confusion over</p>
+            <ul>
+              <li>
+                “Books”: we need to make the scope of the app clear: Book Club
+                only, not all the books in the world like Goodreads
+              </li>
+              <li>
+                “Profile”: profile page should only contain account information;
+                have a separate “My shelves” page for a personalised books page
+              </li>
+            </ul>
+          </li>
+          <li><p>Edit icon was not intuitive</p></li>
+          <li>
+            <p>Suggestions from users</p>
+            <ul>
+              <li>want to see ratings (individual, average)</li>
+              <li>see other people's notes & quotes after the meeting</li>
+            </ul>
+          </li>
+        </ul>
 
-      <h3>Insights</h3>
-      <ul>
-        <li>
-          Users have different ways of searching for books in a list: search for
-          keywords, search for dates, skim visually by scrolling. (Dates are
-          already visible under each book. The covers are there so users can
-          scroll and skim.)
-        </li>
-        <li>
-          Users get confused by the scope of the app: does it contain all the
-          books they have read or only books the Book Club has read? (This
-          should be clear once the app is populated. Book clubs only for now.
-          Rename sections to make clearer.)
-        </li>
-        <li>
-          Users expect to find basic personal and account information on the
-          "Profile" page
-        </li>
-        <li>
-          Users expect to find their personalised book collections on a
-          different page, most commonly on “My shelves”
-        </li>
-        <li>Users want to rate books and see other people's ratings</li>
-        <li>
-          Users want to see other people's notes and quotes after the Book Club
-          meeting
-        </li>
-      </ul>
+        <h3>Insights</h3>
+        <ul>
+          <li>
+            Users have different ways of searching for books in a list: search
+            for keywords, search for dates, skim visually by scrolling. (Dates
+            are already visible under each book. The covers are there so users
+            can scroll and skim.)
+          </li>
+          <li>
+            Users get confused by the scope of the app: does it contain all the
+            books they have read or only books the Book Club has read? (This
+            should be clear once the app is populated. Book clubs only for now.
+            Rename sections to make clearer.)
+          </li>
+          <li>
+            Users expect to find basic personal and account information on the
+            "Profile" page
+          </li>
+          <li>
+            Users expect to find their personalised book collections on a
+            different page, most commonly on “My shelves”
+          </li>
+          <li>Users want to rate books and see other people's ratings</li>
+          <li>
+            Users want to see other people's notes and quotes after the Book
+            Club meeting
+          </li>
+        </ul>
 
-      <h3>Actionable tasks based on insights (prioritised)</h3>
-      <ul>
-        <li>
-          P0: Profile page should contain account information only. Navbar:
-          rename “Books” to “Club books”, add “My shelves”, rename “Profile” to
-          “My account”
-        </li>
-        <li>
-          P0: Create new “My shelves” page for personalised book lists (”Books I
-          have read”, “Books I want to read”). Rename “Books I have read” to
-          “Club books I have read”
-        </li>
-        <li>P0: Rate book, see average rating for each book</li>
-        <li>
-          P1: Add tags to books which you can then search for/filter books by
-          (might be available via an API)
-        </li>
-        <li>
-          P2: Reveal everyone's notes and quotes on the book page after the
-          meeting
-        </li>
-      </ul>
+        <h3>Actionable tasks based on insights (prioritised)</h3>
+        <ul>
+          <li>
+            P0: Profile page should contain account information only. Navbar:
+            rename “Books” to “Club books”, add “My shelves”, rename “Profile”
+            to “My account”
+          </li>
+          <li>
+            P0: Create new “My shelves” page for personalised book lists (”Books
+            I have read”, “Books I want to read”). Rename “Books I have read” to
+            “Club books I have read”
+          </li>
+          <li>P0: Rate book, see average rating for each book</li>
+          <li>
+            P1: Add tags to books which you can then search for/filter books by
+            (might be available via an API)
+          </li>
+          <li>
+            P2: Reveal everyone's notes and quotes on the book page after the
+            meeting
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="refining-the-design-section" class="case_study-h2">
         Refining the design
       </h2>
-
-      <h3>Sticker sheet and high-fidelity wireframes</h3>
-      <div class="grid">
-        <div>
-          <p>
-            First of all, we created a
-            <a
-              href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=30%3A2&t=kOQga3oQ3dWXYnFP-1"
-              target="_blank"
-              >sticker sheet</a
-            >
-            with reusable components to make the process more streamlined and
-            flexible.
-          </p>
-          <p>
-            I always keep accessibility in the forefront of my mind. We tested
-            the colour contrast using WebAIM's contrast checker, and set the
-            base/smallest font size to be 18pt. We made sure each interactive
-            element has enough padding for bigger fingers or shaky cursors. We
-            made each interactive element stand out so users can be certain
-            about what they can click or tap. I will liaise with the developer
-            to make sure that there is a logical flow for keyboard and/or
-            screenreader users and that the headings are in a hierarchical
-            order.
-          </p>
-          <p>
-            We turned the most common components into Figma components for ease
-            (navbar and CTAs).
-          </p>
+      <div class="case_study-section">
+        <h3>Sticker sheet and high-fidelity wireframes</h3>
+        <div class="grid">
+          <div>
+            <p>
+              First of all, we created a
+              <a
+                href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=30%3A2&t=kOQga3oQ3dWXYnFP-1"
+                target="_blank"
+                >sticker sheet</a
+              >
+              with reusable components to make the process more streamlined and
+              flexible.
+            </p>
+            <p>
+              I always keep accessibility in the forefront of my mind. We tested
+              the colour contrast using WebAIM's contrast checker, and set the
+              base/smallest font size to be 18pt. We made sure each interactive
+              element has enough padding for bigger fingers or shaky cursors. We
+              made each interactive element stand out so users can be certain
+              about what they can click or tap. I will liaise with the developer
+              to make sure that there is a logical flow for keyboard and/or
+              screenreader users and that the headings are in a hierarchical
+              order.
+            </p>
+            <p>
+              We turned the most common components into Figma components for
+              ease (navbar and CTAs).
+            </p>
+          </div>
+          <img
+            src="./assets/bookclub/bookclub-sticker_sheet-atoms.png"
+            alt="Sticker sheet atoms"
+            class="bookclub_img"
+          />
         </div>
         <img
-          src="./assets/bookclub/bookclub-sticker_sheet-atoms.png"
-          alt="Sticker sheet atoms"
-          class="bookclub_img"
-        />
-      </div>
-      <img
-        src="./assets/bookclub/bookclub-sticker_sheet-components.jpg"
-        alt="Sticker sheet components"
-        class="bookclub_img"
-      />
-      <img
-        src="./assets/bookclub/bookclub-sticker_sheet-components-mobile.jpg"
-        alt="Sticker sheet navbar for mobile"
-        class="bookclub_img"
-      />
-      <p>
-        I used a Wacom digital tablet to create some simple illustrations (they
-        are the Book Club members' favourite animals enjoying some literature!)
-        to spice up the otherwise simple colour scheme and designs.
-      </p>
-      <img
-        src="./assets/bookclub/bookclub-illustrations.png"
-        alt="Illustrations of an elephant, a hedgehog, a seal, a duck and an owl consuming books in different formats: physical books, audiobook, an e-reader."
-        class="bookclub_img"
-      />
-
-      <p>
-        We designed for desktop and mobile screens, and used the smallest
-        possible frame for both. This will make it easier for developers to
-        implement the designs. The grid we used also restricts the content to
-        never overflow on huge screens and stay legible and skimmable to the
-        human eye.
-      </p>
-      <img
-        src="./assets/bookclub/bookclub-desktop_mobile.png"
-        alt="A showcase of some app screens in both desktop and mobile sizes"
-        class="bookclub_img"
-      />
-
-      <p>
-        See all the
-        <a
-          href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=105%3A2&t=kOQga3oQ3dWXYnFP-1"
-          target="_blank"
-          >high-fidelity wireframes</a
-        >
-        on Figma.
-      </p>
-
-      <h3>Specific areas of improvement</h3>
-
-      <h4>Navbar</h4>
-      <p>We renamed navigation items for clarity.</p>
-      <img
-        src="./assets/bookclub/bookclub-navbar_before.png"
-        alt="Navbar before"
-        class="bookclub_img"
-      />
-      <img
-        src="./assets/bookclub/bookclub-navbar_after.png"
-        alt="Navbar after"
-        class="bookclub_img"
-      />
-
-      <h4>"My shelves" page</h4>
-      <p>
-        We renamed navigation items for clarity. "Books I have read" became
-        "Club books I have read", and "Books I want to read" became "Books I
-        want us to read" to make the scope of this page clear.
-      </p>
-      <div class="grid">
-        <img
-          src="./assets/bookclub/bookclub-my_shelves_before.png"
-          alt="Books page before"
+          src="./assets/bookclub/bookclub-sticker_sheet-components.jpg"
+          alt="Sticker sheet components"
           class="bookclub_img"
         />
         <img
-          src="./assets/bookclub/bookclub-my_shelves_after.png"
-          alt="Books page after"
+          src="./assets/bookclub/bookclub-sticker_sheet-components-mobile.jpg"
+          alt="Sticker sheet navbar for mobile"
           class="bookclub_img"
         />
+        <p>
+          I used a Wacom digital tablet to create some simple illustrations
+          (they are the Book Club members' favourite animals enjoying some
+          literature!) to spice up the otherwise simple colour scheme and
+          designs.
+        </p>
+        <img
+          src="./assets/bookclub/bookclub-illustrations.png"
+          alt="Illustrations of an elephant, a hedgehog, a seal, a duck and an owl consuming books in different formats: physical books, audiobook, an e-reader."
+          class="bookclub_img"
+        />
+
+        <p>
+          We designed for desktop and mobile screens, and used the smallest
+          possible frame for both. This will make it easier for developers to
+          implement the designs. The grid we used also restricts the content to
+          never overflow on huge screens and stay legible and skimmable to the
+          human eye.
+        </p>
+        <img
+          src="./assets/bookclub/bookclub-desktop_mobile.png"
+          alt="A showcase of some app screens in both desktop and mobile sizes"
+          class="bookclub_img"
+        />
+
+        <p>
+          See all the
+          <a
+            href="https://www.figma.com/file/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=105%3A2&t=kOQga3oQ3dWXYnFP-1"
+            target="_blank"
+            >high-fidelity wireframes</a
+          >
+          on Figma.
+        </p>
+
+        <h3>Specific areas of improvement</h3>
+
+        <h4>Navbar</h4>
+        <p>We renamed navigation items for clarity.</p>
+        <img
+          src="./assets/bookclub/bookclub-navbar_before.png"
+          alt="Navbar before"
+          class="bookclub_img"
+        />
+        <img
+          src="./assets/bookclub/bookclub-navbar_after.png"
+          alt="Navbar after"
+          class="bookclub_img"
+        />
+
+        <h4>"My shelves" page</h4>
+        <p>
+          We renamed navigation items for clarity. "Books I have read" became
+          "Club books I have read", and "Books I want to read" became "Books I
+          want us to read" to make the scope of this page clear.
+        </p>
+        <div class="grid">
+          <img
+            src="./assets/bookclub/bookclub-my_shelves_before.png"
+            alt="Books page before"
+            class="bookclub_img"
+          />
+          <img
+            src="./assets/bookclub/bookclub-my_shelves_after.png"
+            alt="Books page after"
+            class="bookclub_img"
+          />
+        </div>
+
+        <h3>Usability testing, round 2</h3>
+
+        <p>
+          The second round of usability testing, where the tasks were the same
+          as in the first round, was overall very positive. Users found the flow
+          intuitive and pleasant. See the
+          <a
+            href="https://www.figma.com/proto/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=122-1584&scaling=min-zoom&page-id=122%3A1583&starting-point-node-id=122%3A1584&show-proto-sidebar=1"
+            target="_blank"
+            >high-fidelity prototype</a
+          >
+          on Figma.
+        </p>
+
+        <p>Some suggestions came up that we will definitely consider:</p>
+        <ul>
+          <li>
+            Fill up space on homepage with most used action (e.g. "Add quote")
+          </li>
+          <li>Show who chose each book</li>
+          <li>
+            Remove “Mark all as TBC” from "Add new book" page, default time,
+            date and location to TBC
+          </li>
+          <li>Make it clear which section is visible to everyone/only you</li>
+          <li>Move "Sort by" and "Search" under the “Currently reading” box</li>
+          <li>Extend "Sort by"</li>
+        </ul>
       </div>
-
-      <h3>Usability testing, round 2</h3>
-
-      <p>
-        The second round of usability testing, where the tasks were the same as
-        in the first round, was overall very positive. Users found the flow
-        intuitive and pleasant. See the
-        <a
-          href="https://www.figma.com/proto/tXqoGNZkkOc7D23vt9jeiE/Book-Club?node-id=122-1584&scaling=min-zoom&page-id=122%3A1583&starting-point-node-id=122%3A1584&show-proto-sidebar=1"
-          target="_blank"
-          >high-fidelity prototype</a
-        >
-        on Figma.
-      </p>
-
-      <p>Some suggestions came up that we will definitely consider:</p>
-      <ul>
-        <li>
-          Fill up space on homepage with most used action (e.g. "Add quote")
-        </li>
-        <li>Show who chose each book</li>
-        <li>
-          Remove “Mark all as TBC” from "Add new book" page, default time, date
-          and location to TBC
-        </li>
-        <li>Make it clear which section is visible to everyone/only you</li>
-        <li>Move "Sort by" and "Search" under the “Currently reading” box</li>
-        <li>Extend "Sort by"</li>
-      </ul>
     </section>
 
-    <section class="case_study-section">
+    <section>
       <h2 id="going-forward-section" class="case_study-h2">Going forward</h2>
-      <div class="grid">
+      <div class="grid case_study-section">
         <div>
           <p>
             The app is currently in development. First, we annotated the Figma
