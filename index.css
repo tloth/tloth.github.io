@@ -72,7 +72,7 @@ a {
   font-size: 1.125rem;
 }
 a:hover {
-  border-bottom: unset;
+  border-color: transparent;
 }
 
 .section_container {
