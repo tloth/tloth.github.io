@@ -19,7 +19,11 @@ html {
   background-color: #a3dbd2;
   background-image: linear-gradient(45deg, #B6E2DB 25%, transparent 25%), linear-gradient(-45deg, #B6E2DB 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #B6E2DB 75%), linear-gradient(-45deg, transparent 75%, #B6E2DB 75%);
   padding-top: 32px;
-
+}
+.html-yarn {
+  background-color: #FC8E69;
+  background-image: linear-gradient(45deg, #fb7a4f 25%, transparent 25%), linear-gradient(-45deg, #fb7a4f 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #fb7a4f 75%), linear-gradient(-45deg, transparent 75%, #fb7a4f 75%);
+  padding-top: 32px;
 }
 
 * > * {
@@ -57,11 +61,18 @@ p, ul {
   font-size: 1.125rem;
 }
 
+ul > li:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+
 .html-book_club > * > * > h1 {
   text-shadow: 4px 4px 0px #B4B3AC;
 }
 .html-tinkl > * > * > h1 {
   text-shadow: 4px 4px 0px #a3dbd2;
+}
+.html-yarn > * > * > h1 {
+  text-shadow: 4px 4px 0px #FC8E69;
 }
 
 a {
@@ -146,7 +157,7 @@ a:hover {
 
 .back_link {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 /* TABLET */
