@@ -11,10 +11,9 @@ html {
   background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
 }
 .html-book_club {
-  background-color: #f4ce04;
-  background-image: linear-gradient(45deg, #FCDB22 25%, transparent 25%), linear-gradient(-45deg, #FCDB22 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #FCDB22 75%), linear-gradient(-45deg, transparent 75%, #FCDB22 75%);
+  background-color: #B4B3AC;
+  background-image: linear-gradient(45deg, #9E9D94 25%, transparent 25%), linear-gradient(-45deg, #9E9D94 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #9E9D94 75%), linear-gradient(-45deg, transparent 75%, #9E9D94 75%);
   padding-top: 32px;
-
 }
 .html-tinkl {
   background-color: #a3dbd2;
@@ -59,7 +58,7 @@ p, ul {
 }
 
 .html-book_club > * > * > h1 {
-  text-shadow: 4px 4px 0px #f4ce04;
+  text-shadow: 4px 4px 0px #B4B3AC;
 }
 .html-tinkl > * > * > h1 {
   text-shadow: 4px 4px 0px #a3dbd2;
