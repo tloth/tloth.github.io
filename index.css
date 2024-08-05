@@ -150,6 +150,12 @@ strong {
 .w-100 {
   width: 100%;
 }
+.wm-300px {
+  max-width: 100%;
+}
+.wm-400px {
+  max-width: 100%;
+}
 .grid {
   display: grid;
   grid-gap: 1rem;
@@ -185,5 +191,12 @@ strong {
   .project_img-standalone{
     align-self: center;
     margin: 0;
+  }
+
+  .wm-300px {
+    max-width: 300px;
+  }
+  .wm-400px {
+    max-width: 400px;
   }
 }
