@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="html-yarn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna T: Yarn Design System case study</title>
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Yarn Design System: case study</h1>
+      <a href="https://tloth.github.io" class="back_link"
+        >Back to the homepage</a
+      >
+    </div>
+
+    <section class="">
+      <h2 class="case_study-h2">Table of Contents</h2>
+      <div class="grid case_study-section">
+        <div>
+          <ol>
+            <li>
+              <a href="#project-overview-section">Overview and context</a>
+            </li>
+            <li><a href="#planning-section">Planning</a></li>
+            <li>
+              <a href="#design-section">Design</a>
+            </li>
+            <li><a href="#build-section">Build</a></li>
+            <li>
+              <a href="#continuous-iteration-section">Continuous iteration</a>
+            </li>
+          </ol>
+        </div>
+
+        <img
+          src="./assets/yarn/yds/yds-hero.png"
+          alt="Overview of the YDS"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2 id="project-overview-section" class="case_study-h2">
+        Overview and context
+      </h2>
+
+      <div class="case_study-section">
+        <h3>Context</h3>
+        <p>
+          <a href="https://app.yarn.family" target="_blank">Yarn</a> is an
+          AI-powered interactive storytelling app for children. We had a working
+          prototype built in vanilla HTML, CSS, JS and Python, but in order to
+          add more features and polish the experience we needed to rebuild the
+          app in a more structured and scalable manner. This case study follows
+          the process of planning, designing and building the Yarn Design System
+          (YDS).
+        </p>
+        <img
+          src="./assets/yarn/yds/yds-overview.png"
+          alt="Children can talk to yarn to create delightful stories"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+
+        <h3>My role</h3>
+        <p>
+          I was the lead designer on this project, while also fulfilling
+          frontend engineering tasks.
+        </p>
+
+        <h3>Overview</h3>
+        <p>
+          Having worked on design systems at other startups, I knew that
+          introducing one to yarn would provide consistency and enable a much
+          faster product development process.
+        </p>
+        <p>As the project lead, I:</p>
+        <ul>
+          <li>
+            <a href="#planning-section"
+              >planned out the design and build phases</a
+            >,
+          </li>
+          <li>created accessibility guidelines,</li>
+          <li>
+            liaised with stakeholders and engineers to align on the planning and
+            build process,
+          </li>
+          <li>
+            <a href="#design-section">built the design system in Figma</a>,
+          </li>
+          <li>
+            <a href="#build-section"
+              >built some components in code and reviewed the pull requests for
+              others</a
+            >,
+          </li>
+          <li>made sure each component was documented in Storybook.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="planning-section" class="case_study-h2">Planning</h2>
+
+      <div class="case_study-section">
+        <p>
+          I proposed using a design system, and once it got signed off, I began
+          planning the process. This project needed to fit into the larger app
+          rebuild timeline, so I worked with the CEO, our main stakeholder, to
+          come up with a timeframe that fit all of us.
+        </p>
+        <p>
+          The CEO and I had already laid out the app’s information architecture
+          in FigJam, which helped see which components we needed to build
+          throughout all user flows.
+        </p>
+        <img
+          src="./assets/yarn/yds/yds-ia.png"
+          alt="The yarn app's information architecture in a flowchart"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+
+        <h3>Measuring success</h3>
+        <p></p>
+
+        <h3>Accessibility</h3>
+        <p>
+          We believe in prioritising accessibility from the very beginning, so I
+          proposed accessibility guidelines for the whole team to agree on. Yarn
+          is an early-stage startup with limited resources, so we decided to
+          focus our initial efforts on the fundamentals and defer more complex
+          work (such as screen reader accessibility) until a later stage.
+        </p>
+        <p>
+          For now, we agreed to only create designs and publish code that
+          adheres to the following (as per
+          <a
+            href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+            target="_blank"
+            >WCAG guidelines</a
+          >
+          and the
+          <a
+            href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility"
+            target="_blank"
+            >POUR principles</a
+          >):
+        </p>
+        <ul>
+          <li>
+            All layouts are responsive; all content is visible and operable on
+            any screen.
+          </li>
+          <li>We always use semantic HTML.</li>
+          <li>There is sufficient colour contrast, and all text is legible.</li>
+          <li>
+            Users are able to navigate our product using only the keyboard.
+          </li>
+          <li>Our links are descriptive.</li>
+          <li>Informative or important images have descriptive alt text.</li>
+        </ul>
+        <h3>Structure</h3>
+        <p>
+          I considered using an existing component library that we could update
+          to fit our visual needs, but I decided to build everything from
+          scratch to have more control over our components. For example, I knew
+          we would need a microphone button with very specific technical
+          requirements.
+        </p>
+        <p>
+          I took the
+          <a href="https://hds.hel.fi/" target="_blank"
+            >Helsinki Design System</a
+          >
+          as my main source of inspiration and decided to divide our design
+          system into Foundations and Components.
+        </p>
+        <p>
+          Foundations: design tokens (colours, typography, spacing), assets
+          (icons, background textures, images), guidelines.
+        </p>
+        <p>
+          Components: CTAs, form inputs, header, other components that appear in
+          the product more than once.
+        </p>
+        <img
+          src="./assets/yarn/yds/yds-structure.png"
+          alt="YDS is split up into two sections: Foundations and Components"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+        <h3>Taking stock of what already existed</h3>
+        <p>
+          Before starting the designs, I took stock of the tokens and components
+          we already had. We had branding guidelines that included colours,
+          icons and typography, as well as several CTAs (buttons/links) which
+          could be reused with only minor alterations.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="design-section" class="case_study-h2">Design</h2>
+      <div class="case_study-section">
+        <p>
+          I started with declaring our breakpoints and minimum screen size that
+          we were happy to support. This, alongside grids and spacing values,
+          ensured that all of our screens were responsive.
+        </p>
+        <p>
+          For interactive elements I covered all relevant states. For CTAs, for
+          example, I designed default, hover, focus and pressed states. (I did
+          not design disabled buttons because I think they are a poor UX
+          pattern.)
+        </p>
+        <p>
+          To meet our accessibility goals, I had to play with some colours,
+          textures and font size to make sure everything was legible while also
+          delivering what the stakeholders were looking for in terms of user
+          delight. For example, they were adamant on using our beautiful
+          textures for the app’s background, which made certain text difficult
+          to read. In some cases, I made the patterns more faint, in others, I
+          added blobs of solid colour behind text to keep writing legible.
+        </p>
+        <p>
+          Throughout the design phase, I liaised with the team and with the
+          stakeholders continuously, considering any feedback from them. We
+          caught up in our daily standup, and once a chunk of design (e.g.
+          tokens, CTAs, menus) was ready, I had the team review it to keep the
+          process as agile as possible.
+        </p>
+        <img
+          src="./assets/yarn/yds/yds-design.png"
+          alt="YDS"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2 id="build-section" class="case_study-h2">Build</h2>
+      <div class="case_study-section">
+        <p>
+          In the engineering team, we decided to rebuild the app using React,
+          TypeScript and Next.js, to optimise for speed and quality. As for the
+          CSS technology, the team had differing opinions. I aimed to design the
+          design system in a way that could work with any technology, and the
+          components were indeed fun and fast to build using Styled Components,
+          our first chosen library. We later ran into limitations with server
+          side rendering, and ended up switching to Tailwind, which is optimised
+          for Next.js.
+        </p>
+        <p>
+          After declaring the design tokens such as colours, typography and
+          breakpoints, we divided the components between us, and built them
+          continuously as we were building out the app’s pages. Developing each
+          component in context prevented issues about sizing and spacing that
+          may have occurred later down the line if we had been building the
+          components in isolation. For instance, building our Text CTAs in
+          context made me realise that I had not yet defined a maximum width,
+          and they stretched all across the screen–it made me think more
+          carefully about our page layout, and adjust it to align with the
+          screen widths I had declared in the design system.
+        </p>
+        <p>
+          I made sure to review every PR to ensure the components’ quality and
+          that we were keeping to the guidelines we had set out at the
+          beginning.
+        </p>
+        <p>
+          Each new item was added to Storybook to create a catalogue of all
+          reusable components with their variants. We used manual QA methods to
+          ensure that each screen follows the guidelines we had set out at the
+          beginning of the project.
+        </p>
+        <img
+          src="./assets/yarn/yds/yds-build.png"
+          alt="YDS in action: screens from around the app using the design system"
+          style="display: block; max-width: 100%; margin: 0 auto"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2 id="continuous-iteration-section" class="case_study-h2">
+        Continuous iteration
+      </h2>
+
+      <div class="case_study-section">
+        <p>
+          The old app had no component library and no reusable design tokens,
+          which made for a tedious and unsafe development process. In the new
+          app, with the help of the design system, adding new components has
+          been very easy. Following the guidelines and using our design tokens,
+          it is now simple to make sure everything stays accessible and visually
+          consistent with the rest of the app. It also helps other designers and
+          engineers contribute, as everything is documented, which gives
+          contributors confidence and independence.
+        </p>
+        <p>
+          The stakeholders were very content with having a central collection of
+          components that they can review in one place, and they gave positive
+          feedback about the general feel of the user flow. They were also
+          pleased with the speed with which we rebuilt the app, which was in
+          large part thanks to YDS.
+        </p>
+
+        <h3>Visual testing</h3>
+        <p>
+          We originally planned to set up visual diff testing for each
+          component, which allows for a much faster and safer development
+          process. There was not enough time to finish setting up the tests,
+          doing so is one of our next steps.
+        </p>
+        <p>
+          I saw the benefits at my previous company, Habito, where my team
+          completed a visual reskin of the entire product in just three weeks—
+          in large part thanks to the use of a design system that incorporated
+          this type of test, allowing us to easily catch any components or
+          outliers that we may have missed.
+        </p>
+
+        <h3>Going forward</h3>
+        <p>
+          Other than setting up visual diff testing, the plan is to keep the
+          design system updated. We shall do this with regular, quarterly
+          reviews, where every team is present (design, engineering, product).
+          Ideally, we would set up a design system guild to have dedicated time
+          for continuous improvements and assurance of the app’s quality and
+          visual consistency.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
